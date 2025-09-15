@@ -3,6 +3,11 @@
 
 Este proyecto implementa un modelo de clasificación binaria para predecir si una persona gana más de 50K al año, utilizando PySpark ML y scikit-learn.
 
+## Integrantes
+
+* Oscar Gomez A00394142
+* Juan Sebastian Caviedez A00394958
+
 ## Requisitos y configuración
 
 1. **Python 3** y **pip**

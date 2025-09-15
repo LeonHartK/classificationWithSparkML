@@ -9,7 +9,7 @@ from models.model import train_model, predict
 
 def main():
     spark = get_spark_session()
-    file_path = "Data/adult_income_sample.csv"
+    file_path = "../Data/adult_income_sample.csv"
     df = load_data(spark, file_path)
     show_basic_info(df)
 
