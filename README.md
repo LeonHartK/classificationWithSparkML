@@ -2,40 +2,40 @@
 
 Este proyecto implementa un modelo de clasificación binaria con PySpark ML para predecir si una persona gana más de 50K al año, utilizando datos demográficos y laborales.
 
-**Crear un entorno virtual con venv**
+## Configuración del entorno (Linux/zsh)
 
-```powershell
-python -m venv venv
+### Crear un entorno virtual con venv
+
+```zsh
+python3 -m venv venv
+source venv/bin/activate
 ```
 
-**Activar el entorno virtual**
+### Instalar dependencias**
 
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-Si aparece error de ejecución de scripts, habilita permisos con:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
-
-y vuelve a activar:
-
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-**Instalar dependencias**
-
-```powershell
+```zsh
 pip install -r requirements.txt
 ```
 
+### Instalar Java (requerido para PySpark)**
+
+```zsh
+sudo apt-get install openjdk-11-jdk
+java -version
+```
+
+## Estructura del proyecto
+
+- `src/` : Código fuente principal (incluye `sparkMlClass.py`)
+- `main.py` : Script de entrada para ejecutar el pipeline
+- `requirements.txt` : Dependencias
+- `Data/` : Datos de entrada
+- `tests/` : Pruebas unitarias (opcional)
+
 ## Ejecución
 
-1. Corre el script de clasificación:
+1. Ejecuta el pipeline:
 
-```powershell
-python sparkMlClass.py
+```zsh
+python main.py
 ```
